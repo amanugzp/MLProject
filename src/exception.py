@@ -1,5 +1,10 @@
 import sys
-import logging
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.logger import logging
+
 
 
 def error_message_detail(error,error_detail:sys):
